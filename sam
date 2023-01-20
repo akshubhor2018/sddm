@@ -1,0 +1,11 @@
+sudo yum install git
+sudo yum install docker 
+sudo systemctl start docker
+sudo systemctl enable docker
+git clone path
+sudo docker build -t aks .
+sudo docker images
+sudo docker run -d -p 3000:3000 aks
+git add .
+git commit -m "changes"
+git push
